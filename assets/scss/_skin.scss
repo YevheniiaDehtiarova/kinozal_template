@@ -1,4 +1,6 @@
 $color-primary: #165690;
+$color-primary2: saturate(darken($color-primary, 14%), 15%);
+$color-primary3: desaturate(lighten($color-primary, 15%), 40%);
 $color-accent: #df8a13;
 $color-dark: #232323;
 $color-gray: darken(#ffffff, 13.5%);

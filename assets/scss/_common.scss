@@ -1,0 +1,18 @@
+html {
+    font-size: $font-size;
+}
+
+body {
+    font-size: $font-size;
+    font-family: $font-main;
+    /*убрать потом*/
+    overflow-y: scroll;
+}
+
+a {
+    color: $color-primary;
+    &:hover {
+        text-decoration: none;
+        color: $color-accent;
+    }
+}
