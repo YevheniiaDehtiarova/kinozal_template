@@ -35,6 +35,31 @@
   text-align: center;
 }
 
+.panel {
+  margin-bottom: 30px;
+}
+
+.panel-info {
+  border: none;
+  background-color: #f1f1f1;
+}
+
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #df8a13;
+  border: none;
+}
+
+.panel-heading {
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+}
+
 html {
   font-size: 16px;
 }
