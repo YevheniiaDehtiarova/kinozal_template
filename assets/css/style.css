@@ -3,7 +3,7 @@
   text-shadow: 0 0 5px black, 0 0 20px black;
 }
 
-.header {
+.header, .left-sidebar {
   margin-bottom: 80px;
 }
 
@@ -13,21 +13,21 @@
   background-color: #191919;
 }
 
-.navbar-nav > .active > a {
+.navbar-inverse .navbar-nav > .active > a {
   background-color: #053159;
 }
 
-.navbar-nav > .active > a:focus, .navbar-nav > .active > a:hover {
+.navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: #517ba2;
 }
 
-.navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a {
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
-.navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
   background-color: #165690;
 }
 
@@ -46,18 +46,31 @@
 
 .panel-info > .panel-heading {
   color: #ffffff;
-  background-color: #df8a13;
   border: none;
+  background-color: #df8a13;
 }
 
 .panel-heading {
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  line-height: 1.1;
 }
 
 .panel-body {
   border: 1px solid #dddddd;
   border-radius: 0 0 4px 4px;
+}
+
+.panel-title {
+  font-size: 1.5rem;
+}
+
+.input-lg {
+  font-size: 0.875rem;
+}
+
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
 }
 
 html {
@@ -102,6 +115,146 @@ a:hover {
   font-size: 1.15rem;
 }
 
+.left-sidebar .panel:last of type {
+  margin: 0;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vertical-slider img {
+  width: 100%;
+}
+
+.site-news-item {
+  position: relative;
+  clear: both;
+}
+
+.site-news-item:not(:last-child) {
+  margin-bottom: 15px;
+  min-height: 85px;
+}
+
+.site-news-item:not(:last-child)::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  width: calc(100%-85px);
+  background-color: #dddddd;
+  height: 1px;
+}
+
+.site-news-item:hover .site-news-item__title {
+  color: #df8a13;
+}
+
+.site-news-item:hover .site-news-item__image {
+  color: #df8a13;
+}
+
+.site-news-item__image {
+  width: 75px;
+  float: left;
+}
+
+.site-news-item__title {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #165690;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.site-news-item__date {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  color: #111111;
+}
+
+.site-news-item__link {
+  position: absolute;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.top-films__body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.top-films__list {
+  margin: 0;
+}
+
+.top-films__item {
+  margin-left: -1;
+  margin-right: -1;
+  padding: 0;
+  border-top: 1px solid #dddddd;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  background-color: transparent;
+  position: relative;
+}
+
+.top-films__item:first-child {
+  border-top: 0;
+  border-radius: 0;
+}
+
+.top-films__item:last-child {
+  border-radius: 0;
+}
+
+.top-films__item:hover {
+  background-color: #df8a13;
+}
+
+.top-films__item:hover a {
+  color: #ffffff;
+}
+
+.top-films__item:hover span {
+  background-color: #232323;
+}
+
+.top-films__link {
+  display: block;
+  padding: 10px 40px;
+}
+
+.top-films__badge {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
@@ -110,7 +263,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .navbar-nav > li > a {
+  .navbar-inverse .navbar-nav > li > a {
     border-radius: 4px;
   }
   .navbar-left li {
@@ -122,7 +275,7 @@ a:hover {
 }
 
 @media (max-width: 767.8px) {
-  .navbar-nav > li > a {
+  .navbar-inverse .navbar-nav > li > a {
     text-align: center;
   }
   .navbar-toggle {

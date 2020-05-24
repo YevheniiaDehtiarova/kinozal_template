@@ -5,3 +5,8 @@
 %margin-bottom {
     margin-bottom: $gap * 5.33333333333333;
 }
+
+%block-shortener {
+    white-space: nowrap;
+    overflow: hidden;
+}
