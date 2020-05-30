@@ -1,0 +1,401 @@
+Skip to content Why GitHub? Team Enterprise Explore Marketplace Pricing Search Sign in Sign up FomenkoAndrey / 20200503___kinozal 100 Code Issues 0 Pull requests 0 Actions Projects 0 Security 0 Insights Join GitHub today GitHub is home to over 50 million
+developers working together to host and review code, manage projects, and build software together. 20200503___kinozal/index.html @Alecto Alecto закончили верстку в классе dbbab9c 20 days ago 391 lines (371 sloc) 17.5 KB
+
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>КиноЗал</title>
+    <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Serif:400,700" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+    <!--t.ly/4q9O-->
+    <header class="header container-fluid">
+        <div class="header-logo row">
+            <div class="container">
+                <strong class="header-logo__title">КиноЗал</strong>
+                <span class="header-logo__description">Найди свое кино</span>
+            </div>
+        </div>
+
+        <div class="header-menu row">
+            <nav class="navbar navbar-inverse navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-top" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-top">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="active"><a href="#">Главная</a></li>
+                            <li><a href="page.html">Фильмы</a></li>
+                            <li><a href="#">Сериалы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Рейтинг</a></li>
+                            <li><a href="#">Раздачи</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
+
+                <section class="site-search panel panel-info hidden-lg hidden-md">
+                    <div class="panel-heading">Поиск</div>
+                    <div class="panel-body">
+                        <form action="search">
+                            <div class="input-group input-group-lg">
+                                <input class="form-control" type="text" placeholder="Поиск по сайту">
+                                <span class="input-group-btn">
+                <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="user-login panel panel-info hidden-lg hidden-md">
+                    <div class="panel-heading">Вход</div>
+                    <div class="panel-body">
+                        <form action="login">
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="text" placeholder="Логин">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="password" placeholder="Пароль">
+                            </div>
+                            <button class="btn btn-default btn-block btn-lg">Вход</button>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="new-films">
+                    <h1>Новые фильмы</h1>
+                    <div class="new-films-row row">
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+                            <div class="new-films-item__thumbnail thumbnail">
+                                <a href="#" class="new-films-item__link">
+                                    <img src="assets/img/films/1266931.jpg" alt="" class="new-films-item__image">
+                                    <div class="new-films-item__caption caption">
+                                        <h3 class="new-films-item__title">Lorem ipsum dolor sit amet.</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
+
+                <div class="vertical-slider panel panel-info hidden-sm hidden-xs">
+                    <div id="vertcal-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#vertcal-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#vertcal-carousel" data-slide-to="1"></li>
+                            <li data-target="#vertcal-carousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="assets/img/films/1263242.jpg" alt="image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/films/1289488.jpg" alt="image">
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/films/1401663.jpg" alt="image">
+                            </div>
+                        </div>
+
+                        <a class="left carousel-control" href="#vertcal-carousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#vertcal-carousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="site-search panel panel-info hidden-sm hidden-xs">
+                    <div class="panel-heading">Поиск</div>
+                    <div class="panel-body">
+                        <form action="search">
+                            <div class="input-group input-group-lg">
+                                <input class="form-control" type="text" placeholder="Поиск по сайту">
+                                <span class="input-group-btn">
+                <button class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user-login panel panel-info hidden-sm hidden-xs">
+                    <div class="panel-heading">Вход</div>
+                    <div class="panel-body">
+                        <form action="login">
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="text" placeholder="Логин">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control input-lg" type="password" placeholder="Пароль">
+                            </div>
+                            <button class="btn btn-default btn-block btn-lg">Вход</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="site-news panel panel-info">
+                    <div class="panel-heading">Новости сайта</div>
+                    <div class="panel-body">
+                        <div class="site-news-item">
+                            <div class="site-news-item__image thumbnail"><img src="assets/img/75x75.png" alt="image"></div>
+                            <div class="site-news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi repellendus ullam velit, vitae voluptatem?
+                            </div>
+                            <div class="site-news-item__date">5 мая 2020</div>
+                            <div>
+                                <a class="site-news-item__link" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="site-news-item">
+                            <div class="site-news-item__image thumbnail"><img src="assets/img/75x75.png" alt="image"></div>
+                            <div class="site-news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi repellendus ullam velit, vitae voluptatem?
+                            </div>
+                            <div class="site-news-item__date">1 мая 2020</div>
+                            <div>
+                                <a class="site-news-item__link" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="site-news-item">
+                            <div class="site-news-item__image thumbnail"><img src="assets/img/75x75.png" alt="image"></div>
+                            <div class="site-news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi repellendus ullam velit, vitae voluptatem?
+                            </div>
+                            <div class="site-news-item__date">12 мая 2020</div>
+                            <div>
+                                <a class="site-news-item__link" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="site-news-item">
+                            <div class="site-news-item__image thumbnail"><img src="assets/img/75x75.png" alt="image"></div>
+                            <div class="site-news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi repellendus ullam velit, vitae voluptatem?
+                            </div>
+                            <div class="site-news-item__date">21 мая 2020</div>
+                            <div>
+                                <a class="site-news-item__link" href="#"></a>
+                            </div>
+                        </div>
+                        <div class="site-news-item">
+                            <div class="site-news-item__image thumbnail"><img src="assets/img/75x75.png" alt="image"></div>
+                            <div class="site-news-item__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi repellendus ullam velit, vitae voluptatem?
+                            </div>
+                            <div class="site-news-item__date">25 мая 2020</div>
+                            <div>
+                                <a class="site-news-item__link" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-films panel panel-info">
+                    <div class="panel-heading">Рейтинг фильмов</div>
+                    <div class="top-films__body panel-body">
+                        <ul class="top-films__list list-group">
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Lorem ipsum.
+                <span class="top-films__badge badge">9.1</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing.
+                <span class="top-films__badge badge">9.2</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Eligendi, sapiente.
+                <span class="top-films__badge badge">9.3</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Hic, vero!
+                <span class="top-films__badge badge">9.4</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <span class="top-films__badge badge">9.5</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
+                fuga.
+                <span class="top-films__badge badge">9.6</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Eaque, esse?
+                <span class="top-films__badge badge">9.7</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Quod, sequi!
+                <span class="top-films__badge badge">9.8</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Ipsam, vel!
+                <span class="top-films__badge badge">9.9</span></a>
+                            </li>
+                            <li class="top-films__item list-group-item">
+                                <a class="top-films__link" href="#">Delectus, iure?
+                <span class="top-films__badge badge">8.1</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+© 2020 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub Pricing API Training Blog About

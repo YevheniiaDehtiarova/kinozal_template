@@ -3,7 +3,7 @@
   text-shadow: 0 0 5px black, 0 0 20px black;
 }
 
-.header, .left-sidebar {
+.header, .main, .left-sidebar {
   margin-bottom: 80px;
 }
 
@@ -113,6 +113,37 @@ a:hover {
   color: #ffffff;
   letter-spacing: 0.2em;
   font-size: 1.15rem;
+}
+
+.main .site-search {
+  margin: -15px 0 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
+}
+
+.new-films-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.new-films-item {
+  margin-bottom: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+.new-films-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.new-films-item__thumbnail {
+  margin-bottom: 0;
 }
 
 .left-sidebar .panel:last of type {

@@ -1,0 +1,26 @@
+.main {
+    @extend %margin-bottom;
+    .site-search {
+        margin: -$gap 0 ($gap * 3);
+    }
+    .user-login {
+        margin-bottom: $gap * 4;
+    }
+}
+
+.new-films-row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+}
+
+.new-films-item {
+    margin-bottom: $gap;
+    padding-right: $gap / 2;
+    padding-left: $gap / 2;
+    &__title {
+        @include text-shortener;
+    }
+    &__thumbnail {
+        margin-bottom: 0;
+    }
+}
