@@ -1,0 +1,27 @@
+.footer {
+    display: block;
+    padding-top: $gap*3;
+    color: #fbfbfb;
+    background-color: $color-dark;
+}
+
+.container-fluid {
+    padding-right: $gap;
+    padding-left: $gap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    list-style-type: disc;
+}

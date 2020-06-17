@@ -88,9 +88,22 @@ a {
   color: #165690;
 }
 
-a:hover {
+a:hover, a:focus {
   text-decoration: none;
   color: #df8a13;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
 }
 
 .header-logo {
@@ -144,6 +157,89 @@ a:hover {
 
 .new-films-item__thumbnail {
   margin-bottom: 0;
+}
+
+.top-week-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+
+.top-week-item {
+  margin-bottom: 15px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
+
+.top-week-item__title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+}
+
+.top-week-item__thumbnail {
+  margin-bottom: 0;
+}
+
+.top-week-item__caption {
+  text-align: center;
+}
+
+.new-films-item:hover .thumbnail,
+.top-week-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
+.new-films-item:hover h3,
+.top-week-item:hover h3 {
+  color: #ffffff;
+}
+
+.thumbnail .caption {
+  padding: 9px;
+  color: #333;
+}
+
+.film-news {
+  position: relative;
+}
+
+.film-news__item {
+  display: block;
+}
+
+.film-news__item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.film-news__item__image {
+  width: 100%;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img,
+.img-responsive,
+.thumbnail a > img,
+.thumbnail > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbnail a > img,
+.thumbnail > img {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .left-sidebar .panel:last of type {
@@ -284,6 +380,34 @@ a:hover {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.footer {
+  display: block;
+  padding-top: 45px;
+  color: #fbfbfb;
+  background-color: #232323;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul {
+  list-style-type: disc;
 }
 
 @media (min-width: 576px) {

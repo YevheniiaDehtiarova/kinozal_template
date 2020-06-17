@@ -1,0 +1,34 @@
+    .film-news {
+        position: relative;
+        &__item {
+            display: block;
+            &__thumbnail {
+                margin-bottom: 0;
+                transition: background-color 0.5s;
+            }
+            &__image {
+                width: 100%;
+            }
+        }
+    }
+    
+    img {
+        vertical-align: middle;
+        border: 0;
+    }
+    
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .thumbnail a>img,
+    .thumbnail>img {
+        margin-right: auto;
+        margin-left: auto;
+    }
