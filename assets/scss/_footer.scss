@@ -25,3 +25,11 @@ li {
 ul {
     list-style-type: disc;
 }
+
+.footer_a {
+    color: #777777;
+}
+
+.footer_a:hover {
+    color: $color-light;
+}

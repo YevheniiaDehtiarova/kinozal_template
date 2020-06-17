@@ -410,6 +410,14 @@ ul {
   list-style-type: disc;
 }
 
+.footer_a {
+  color: #777777;
+}
+
+.footer_a:hover {
+  color: #ffffff;
+}
+
 @media (min-width: 576px) {
   .header-logo__title {
     font-size: 3.5rem;
