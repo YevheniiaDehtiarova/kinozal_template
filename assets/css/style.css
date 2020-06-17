@@ -13,6 +13,10 @@
   background-color: #191919;
 }
 
+.navbar-inverse .navbar-inverse .navbar-nav > .active > a {
+  background-color: #053159;
+}
+
 .navbar-inverse .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: #517ba2;
@@ -79,6 +83,10 @@ body {
   font-family: "PT Sans", sans-serif;
   /*убрать потом*/
   overflow-y: scroll;
+}
+
+a {
+  color: #165690;
 }
 
 a {
@@ -209,10 +217,6 @@ a:hover, a:focus {
   transition: background-color 0.25s;
 }
 
-.film-news {
-  /* position: relative;*/
-}
-
 .film-news__item {
   display: block;
 }
@@ -233,22 +237,21 @@ img {
   border: 0;
 }
 
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > img,
-.img-responsive,
-.thumbnail a > img,
-.thumbnail > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.thumbnail a > img,
-.thumbnail > img {
-  margin-right: auto;
-  margin-left: auto;
-}
-
+/*.carousel-inner>.item>a>img,
+        .carousel-inner>.item>img,
+        .img-responsive,
+        .thumbnail a>img,
+        .thumbnail>img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .thumbnail a>img,
+        .thumbnail>img {
+            margin-right: auto;
+            margin-left: auto;
+        }*/
 .film-news-item:hover .thumbnail {
   background-color: #f0ad4f;
 }
@@ -415,11 +418,10 @@ img {
   margin-left: auto;
 }
 
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
+/*li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}*/
 .footer ul {
   padding: 0;
   list-style: none;

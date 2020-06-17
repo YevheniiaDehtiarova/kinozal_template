@@ -2,6 +2,9 @@
       margin-bottom: 0;
       border-color: transparent;
       background-color: darken($color-dark, 4%);
+      .navbar-inverse .navbar-nav>.active>a {
+          background-color: #053159;
+      }
       .navbar-inverse .navbar-nav>.active>a:hover,
       .navbar-inverse .navbar-nav>.active>a:focus {
           background-color: #517ba2;
