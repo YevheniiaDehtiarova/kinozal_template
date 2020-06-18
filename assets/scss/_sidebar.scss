@@ -29,7 +29,7 @@
         }
     }
     &:hover {
-        .site-news-item__title {
+        .site-news-item__title a {
             color: $color-accent;
         }
         .site-news-item__image {
@@ -105,4 +105,9 @@
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+.site-news-item:hover .site-news-item__image {
+    border-color: #df8a13;
+    background-color: #df8a13;
 }
