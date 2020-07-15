@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header-logo__title, .header-logo__description {
   text-shadow: 0 0 5px black, 0 0 20px black;
 }
@@ -81,12 +80,7 @@ html {
 body {
   font-size: 16px;
   font-family: "PT Sans", sans-serif;
-  /*убрать потом*/
   overflow-y: scroll;
-}
-
-a {
-  color: #165690;
 }
 
 a {
@@ -116,7 +110,7 @@ h1::after {
   width: 100%;
   margin: 0.85em 0 0 15px;
   content: "";
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  border-bottom: 3px solid #df8a13;
 }
 
 h2::before {
@@ -125,7 +119,7 @@ h2::before {
   width: 30px;
   margin: 0.25em 0 0 0;
   content: "";
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  border-bottom: 3px solid #df8a13;
 }
 
 h2::after {
@@ -133,13 +127,22 @@ h2::after {
   width: 100%;
   margin: 0.85em 0 0 15px;
   content: "";
-  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+  border-bottom: 3px solid #df8a13;
 }
 
 :after,
 :before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  font-weight: bold;
+  line-height: 1.1;
+  color: inherit;
+  font-family: inherit;
 }
 
 .header-logo {
@@ -344,7 +347,7 @@ img {
   border: 1px solid #e3e3e3;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .well {
@@ -447,7 +450,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.left-sidebar .panel:last of type {
+.left-sidebar .panel {
   margin: 0;
 }
 
@@ -494,24 +497,18 @@ h1 {
 
 .site-news-item__title {
   margin-bottom: 10px;
-  display: -webkit-box;
   overflow: hidden;
   height: 50px;
   font-size: 1rem;
   line-height: 1.5rem;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   color: #165690;
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
-  display: -webkit-box;
   overflow: hidden;
   height: 50px;
   font-size: 1rem;
   line-height: 1.5rem;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 
 .site-news-item__date {
@@ -541,8 +538,8 @@ h1 {
 }
 
 .top-films__item {
-  margin-left: -1;
-  margin-right: -1;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
   border-top: 1px solid #dddddd;
   border-right: 0;
@@ -606,10 +603,6 @@ h1 {
   margin-left: auto;
 }
 
-/*li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-}*/
 .footer ul {
   padding: 0;
   list-style: none;

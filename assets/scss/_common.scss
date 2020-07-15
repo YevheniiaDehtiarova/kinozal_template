@@ -5,12 +5,7 @@ html {
 body {
     font-size: $font-size;
     font-family: $font-main;
-    /*убрать потом*/
     overflow-y: scroll;
-}
-
-a {
-    color: #165690;
 }
 
 a {
@@ -38,27 +33,36 @@ h1::after {
     width: 100%;
     margin: 0.85em 0 0 15px;
     content: "";
-    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+    border-bottom: 3px solid $color-accent;
 }
 
 h2::before {
     position: absolute;
     left: 0;
-    width: 30px;
+    width: $gap*2;
     margin: 0.25em 0 0 0;
     content: "";
-    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+    border-bottom: 3px solid $color-accent;
 }
 
 h2::after {
     position: absolute;
     width: 100%;
-    margin: 0.85em 0 0 15px;
+    margin: 0.85em 0 0 $gap;
     content: "";
-    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+    border-bottom: 3px solid $color-accent;
 }
 
 :after,
  :before {
     box-sizing: border-box;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    line-height: 1.1;
+    color: inherit;
+    font-family: inherit;
 }
