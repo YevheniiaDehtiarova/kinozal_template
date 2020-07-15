@@ -243,6 +243,7 @@ h2 {
      text-overflow: ellipsis;
   margin-bottom: 0;
   margin-top: 0;
+  font-weight: bold;
 }
 
 .top-week-item__thumbnail {
@@ -276,19 +277,27 @@ h2 {
   transition: background-color 0.25s;
 }
 
-.film-news__item {
+.film-news-item {
   display: block;
 }
 
-.film-news__item__thumbnail {
+.film-news-item__thumbnail {
   margin-bottom: 0;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
 
-.film-news__item__image {
+.film-news-item__image {
   width: 100%;
+}
+
+.film-news-item__button {
+  float: right;
+  margin-bottom: 30px;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 img {
