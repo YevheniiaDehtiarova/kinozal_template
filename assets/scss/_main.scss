@@ -25,6 +25,7 @@
                     @include text-shortener;
                     margin-bottom: 0;
                     margin-top: 0;
+                    font-weight: bold;
                 }
                 &__thumbnail {
                     margin-bottom: 0;
@@ -50,6 +51,8 @@
                 padding-left: $gap / 2;
                 &__title {
                     @include text-shortener;
+                    margin-bottom: 0;
+                    margin-top: 0;
                 }
                 &__thumbnail {
                     margin-bottom: 0;
