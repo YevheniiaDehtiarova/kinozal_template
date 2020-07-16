@@ -33,7 +33,7 @@ h1::after {
     width: 100%;
     margin: 0.85em 0 0 15px;
     content: "";
-    border-bottom: 3px solid $color-accent;
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 h2::before {
@@ -42,7 +42,7 @@ h2::before {
     width: $gap*2;
     margin: 0.25em 0 0 0;
     content: "";
-    border-bottom: 3px solid $color-accent;
+    border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 h2::after {
