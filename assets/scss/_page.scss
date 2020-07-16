@@ -9,6 +9,14 @@
     }
 }
 
+.film-info__wrapper:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.film-info__wrapper {
+    white-space: nowrap;
+}
+
 .well {
     min-height: 20px;
     padding: 19px;
